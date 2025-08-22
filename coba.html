@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Soal Matematika Kelas 1 SD</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .question { margin-bottom: 20px; }
+        .options { margin-left: 20px; }
+        button { margin-top: 10px; }
+        input[type="radio"] { margin-right: 10px; }
+        img { width: 100px; height: auto; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Soal Pilihan Ganda Matematika Kelas 1 SD</h1>
+    <form id="quizForm">
+
+        <div class="question">
+            <p>1. Mana yang lebih besar, 3 atau 20?</p>
+            <div class="options">
+                <input type="radio" name="q1" value="A"> A. 20<br>
+                <input type="radio" name="q1" value="B"> B. 15<br>
+                <input type="radio" name="q1" value="C"> C. 8<br>
+                <input type="radio" name="q1" value="D"> D. 2
+            </div>
+            <button type="button" onclick="checkAnswer(1, 'A')">Periksa</button>
+            <p id="result1"></p>
+        </div>
+
+        <div class="question">
+            <p>2. Mana yang lebih besar, 14 atau 2?</p>
+            <div class="options">
+                <input type="radio" name="q2" value="A"> A. 13<br>
+                <input type="radio" name="q2" value="B"> B. 14<br>
+                <input type="radio" name="q2" value="C"> C. 11<br>
+                <input type="radio" name="q2" value="D"> D. 7
+            </div>
+            <button type="button" onclick="checkAnswer(2, 'B')">Periksa</button>
+            <p id="result2"></p>
+        </div>
+
+        <div class="question">
+            <p>3. Angka setelah 17 adalah?</p>
+            <div class="options">
+                <input type="radio" name="q3" value="A"> A. 19<br>
+                <input type="radio" name="q3" value="B"> B. 20<br>
+                <input type="radio" name="q3" value="C"> C. 17<br>
+                <input type="radio" name="q3" value="D"> D. 18
+            </div>
+            <button type="button" onclick="checkAnswer(3, 'D')">Periksa</button>
+            <p id="result3"></p>
+        </div>
+
+        <div class="question">
+            <p>4. Berapa 8 + 4?</p>
+            <div class="options">
+                <input type="radio" name="q4" value="A"> A. 9<br>
+                <input type="radio" name="q4" value="B"> B. 3<br>
+                <input type="radio" name="q4" value="C"> C. 13<br>
+                <input type="radio" name="q4" value="D"> D. 12
+            </div>
+            <button type="button" onclick="checkAnswer(4, 'D')">Periksa</button>
+            <p id="result4"></p>
+        </div>
+
+        <div class="question">
+            <p>5. Bentuk apa yang memiliki tidak ada sudut?</p>
+            <img src="https://via.placeholder.com/100?text=Lingkaran" alt="Lingkaran">
+            <div class="options">
+                <input type="radio" name="q5" value="A"> A. segitiga<br>
+                <input type="radio" name="q5" value="B"> B. lingkaran<br>
+                <input type="radio" name="q5" value="C"> C. persegi<br>
+                <input type="radio" name="q5" value="D"> D. persegi panjang
+            </div>
+            <button type="button" onclick="checkAnswer(5, 'B')">Periksa</button>
+            <p id="result5"></p>
+        </div>
+
+        <div class="question">
+            <p>6. Berapa 7 + 3?</p>
+            <div class="options">
+                <input type="radio" name="q6" value="A"> A. 10<br>
+                <input type="radio" name="q6" value="B"> B. 7<br>
+                <input type="radio" name="q6" value="C"> C. 4<br>
+                <input type="radio" name="q6" value="D"> D. 18
+            </div>
+            <button type="button" onclick="checkAnswer(6, 'A')">Periksa</button>
+            <p id="result6"></p>
+        </div>
+
+        <div class="question">
+            <p>7. Berapa 6 + 7?</p>
+            <div class="options">
+                <input type="radio" name="q7" value="A"> A. 11<br>
+                <input type="radio" name="q7" value="B"> B. 5<br>
+                <input type="radio" name="q7" value="C"> C. 1<br>
+                <input type="radio" name="q7" value="D"> D. 13
+            </div>
+            <button type="button" onclick="checkAnswer(7, 'D')">Periksa</button>
+            <p id="result7"></p>
+        </div>
+
+        <div class="question">
+            <p>8. Mana yang lebih besar, 15 atau 17?</p>
+            <div class="options">
+                <input type="radio" name="q8" value="A"> A. 8<br>
+                <input type="radio" name="q8" value="B"> B. 17<br>
+                <input type="radio" name="q8" value="C"> C. 10<br>
+                <input type="radio" name="q8" value="D"> D. 5
+            </div>
+            <button type="button" onclick="checkAnswer(8, 'B')">Periksa</button>
+            <p id="result8"></p>
+        </div>
+
+        <div class="question">
+            <p>9. Berapa 3 + 10?</p>
+            <div class="options">
+                <input type="radio" name="q9" value="A"> A. 3<br>
+                <input type="radio" name="q9" value="B"> B. 13<br>
+                <input type="radio" name="q9" value="C"> C. 20<br>
+                <input type="radio" name="q9" value="D"> D. 10
+            </div>
+            <button type="button" onclick="checkAnswer(9, 'B')">Periksa</button>
+            <p id="result9"></p>
+        </div>
+
+        <div class="question">
+            <p>10. Angka setelah 10 adalah?</p>
+            <div class="options">
+                <input type="radio" name="q10" value="A"> A. 18<br>
+                <input type="radio" name="q10" value="B"> B. 11<br>
+                <input type="radio" name="q10" value="C"> C. 12<br>
+                <input type="radio" name="q10" value="D"> D. 17
+            </div>
+            <button type="button" onclick="checkAnswer(10, 'B')">Periksa</button>
+            <p id="result10"></p>
+        </div>
+
+        <div class="question">
+            <p>11. Berapa 8 - 7?</p>
+            <div class="options">
+                <input type="radio" name="q11" value="A"> A. 1<br>
+                <input type="radio" name="q11" value="B"> B. 20<br>
+                <input type="radio" name="q11" value="C"> C. 19<br>
+                <input type="radio" name="q11" value="D"> D. 5
+            </div>
+            <button type="button" onclick="checkAnswer(11, 'A')">Periksa</button>
+            <p id="result11"></p>
+        </div>
+
+        <div class="question">
+            <p>12. Berapa 12 - 11?</p>
+            <div class="options">
+                <input type="radio" name="q12" value="A"> A. 1<br>
+                <input type="radio" name="q12" value="B"> B. 16<br>
+                <input type="radio" name="q12" value="C"> C. 17<br>
+                <input type="radio" name="q12" value="D"> D. 4
+            </div>
+            <button type="button" onclick="checkAnswer(12, 'A')">Periksa</button>
+            <p id="result12"></p>
+        </div>
+
+        <div class="question">
+            <p>13. Bentuk apa yang memiliki 4 sudut?</p>
+            <img src="https://via.placeholder.com/100?text=Persegi+Panjang" alt="Persegi Panjang">
+            <div class="options">
+                <input type="radio" name="q13" value="A"> A. lingkaran<br>
+                <input type="radio" name="q13" value="B"> B. persegi panjang<br>
+                <input type="radio" name="q13" value="C"> C. persegi<br>
+                <input type="radio" name="q13" value="D"> D. segitiga
+            </div>
+            <button type="button" onclick="checkAnswer(13, 'B')">Periksa</button>
+            <p id="result13"></p>
+        </div>
+
+        <div class="question">
+            <p>14. Berapa 1 + 7?</p>
+            <div class="options">
+                <input type="radio" name="q14" value="A"> A. 9<br>
+                <input type="radio" name="q14" value="B"> B. 13<br>
+                <input type="radio" name="q14" value="C"> C. 8<br>
+                <input type="radio" name="q14" value="D"> D. 0
+            </div>
+            <button type="button" onclick="checkAnswer(14, 'C')">Periksa</button>
+            <p id="result14"></p>
+        </div>
+
+        <div class="question">
+            <p>15. Bentuk apa yang memiliki 3 sudut?</p>
+            <img src="https://via.placeholder.com/100?text=Segitiga" alt="Segitiga">
+            <div class="options">
+                <input type="radio" name="q15" value="A"> A. segitiga<br>
+                <input type="radio" name="q15" value="B"> B. lingkaran<br>
+                <input type="radio" name="q15" value="C"> C. persegi<br>
+                <input type="radio" name="q15" value="D"> D. persegi panjang
+            </div>
+            <button type="button" onclick="checkAnswer(15, 'A')">Periksa</button>
+            <p id="result15"></p>
+        </div>
+
+        <div class="question">
+            <p>16. Bentuk apa yang memiliki 4 sudut?</p>
+            <img src="https://via.placeholder.com/100?text=Persegi+Panjang" alt="Persegi Panjang">
+            <div class="options">
+                <input type="radio" name="q16" value="A"> A. persegi<br>
+                <input type="radio" name="q16" value="B"> B. persegi panjang<br>
+                <input type="radio" name="q16" value="C"> C. segitiga<br>
+                <input type="radio" name="q16" value="D"> D. lingkaran
